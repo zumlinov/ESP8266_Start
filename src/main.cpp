@@ -10,6 +10,16 @@ int k = 0;
 #define TFT_DC D2   // Data Command control pin
 #define TFT_RST D0  // Reset pin (could connect to RST pin)
 
+// ESP8266 <-> SCREEN
+// D7      <-> SDA
+// D5      <-> SCL
+// D1      <-> CS
+// D2      <-> DC
+// D0      <-> RST
+// GND     <-> GND
+// 3V      <-> VCC
+// 3V      <-> BLK
+
 //Adafruit_ST7789 colordisplay = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 Adafruit_ST7789 colordisplay = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
 
